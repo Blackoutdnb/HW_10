@@ -1,0 +1,30 @@
+    1  git config --global user.name "Yevhen Moshnyk"
+    2  git config --global user.email blackoutdnb@gmail.com
+    3  git clone https://github.com/Blackoutdnb/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add text_ignore.txt
+    9  git add .gitignore
+   10  git status
+   11  git commit -m "new file created"
+   12  touch main_test.txt
+   13  git add main_test.txt
+   14  git commit -m "new file (main_test.txt) created"
+   15  git checkout -b develop
+   16  git checkout develop
+   17  toch develop_test.txt
+   18  touch develop_test.txt
+   19  git add develop_test.txt
+   20  git commit -m "new file (develop_test.txt) created"
+   21  nano develop_test.txt
+   22  git status
+   23  git add develop_test.txt
+   24  git status
+   25  git commit -m "new file (develop_test.txt) modified"
+   26  checkout main
+   27  git checkout main
+   28  git merge develop
+   29  git log
+   30  history > command_list.csv
